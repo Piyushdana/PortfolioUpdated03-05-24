@@ -1,0 +1,804 @@
+/* this is the main parent Container of all components present  */
+.container{
+    background-color: #131418;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    overflow: hidden;
+    
+}
+
+/* this is first Profile or we can nav of the where we have hii emoji and about icon */
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.8rem 9rem;
+    align-items: center;
+    opacity: 0.8;
+}
+/* This span is the hii Emoji present i profile  */
+.profile>span{
+    font-size: 2rem;
+}
+.profile>span:hover{
+    transform: rotateZ(20deg);
+    transition: 0.2s ease-in-out;
+}
+/*/////////////////////////////// */
+
+
+/* this is the about Icon Css In about we have two things one profile icon and  about span which is shown when hovered*/
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    color: white;
+    font-size:1.6rem;
+}
+
+.about:hover{
+    /* background-color: rgba(255, 255, 255, 0.34); */
+    /* box-shadow: 0px 0px 0px 4px white; */
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius:8px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    /* transition: 0.2s ease-in; */
+ 
+}
+.abtText{
+    margin-top: 3.5rem;
+    letter-spacing: 100px;
+    color: rgb(255, 255, 255);
+    font-family: DM Sans, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    border-radius: 100px;
+    border: none;
+    /* text-decoration: underline; */
+    position: absolute;
+    width: 90px;
+    opacity: 0;
+    transition:  0.2s ease-in;
+}
+
+.about:hover .abtText{
+    opacity: 0.3;
+    outline: none; 
+    background-color: rgba(255, 255, 255, 0.34);
+    box-shadow: 0px 0px 0px 4px white;
+    -webkit-box-shadow: 0px 0px 0px 4px white;
+    -moz-box-shadow: 0px 0px 0px 4px white;
+    opacity: 1;
+    transition: 0.2s ease;
+}
+
+
+/* This is main Text section of intro in this we have intro and buttons */
+
+.Name > h1{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -9%);
+    color: white;
+    text-align: center; 
+    width: 100%;
+    color: white;
+    font-family: DM Sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    letter-spacing: 3px;
+    line-height: 1.2em;
+    margin-bottom: 50px;
+
+}
+
+/* These are the all the buttons present in main div socialButtons   */
+.socialButtons{
+    display: flex;
+    margin: auto;
+    gap: 20px;
+}
+
+/* These button class is of all the  button or can say a tags */
+.buttons{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    position: relative;
+    box-shadow: 0px 0px 0px 2px transparent;
+    -webkit-box-shadow: 0px 0px 0px 2px transparent;
+   
+}
+
+.icon{    
+    color: white;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+}
+
+/* This is the span text shown when button hovered  */
+.btnText{
+    background-color: white;
+    color: #3d4144;
+    font-family: DM Sans, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 1.2em;
+    padding: 10px 12px;
+    border-radius: 100px;
+    text-decoration: none;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    width: 90px;
+    z-index: 0;
+    top: 100%;
+    margin-top: 20px;
+    margin-left: -72%;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition:  0.2s ease;
+}
+
+.buttons:hover{
+    outline: none; 
+    background-color: rgba(255, 255, 255, 0.34);
+    box-shadow: 0px 0px 0px 4px white;
+    -webkit-box-shadow: 0px 0px 0px 4px white;
+    -moz-box-shadow: 0px 0px 0px 4px white;
+    opacity: 1;
+    transition: 0.2s ease;
+}
+
+/* When the button will be the Hovered then only text will be visible */
+.buttons:hover .btnText {
+    opacity: 1;
+    z-index: 100;
+    transition: 0.2s ease;
+    margin-top: 16px;
+}
+
+/* These are all buttons from 1-5 to added other class to make them curve */
+.b1{
+    transform: rotate(-7deg);
+    margin-top: 13px;
+    animation: buttonsAnimCenter 3.5s  ease-in;
+
+}
+
+.b1:active{
+    background-color: rgba(255, 255, 255, 0.36);
+    border-radius: 28px;
+    transition: 0.2s ease;
+    
+}
+
+.b2{
+    transform: rotate(-3deg);
+    margin-top: 4px;
+    /* animation: buttonsAnim 2s ease; */
+    animation: buttonsAnimCenter 3s  ease-in;
+
+}
+.b3{
+    
+    animation: buttonsAnimCenter 2.5s  ease-in;
+}
+.b4{
+    transform: rotate(  3deg);
+    margin-top: 4px;
+    animation: buttonsAnimCenter 3s  ease-in;
+
+}
+
+.b5{
+    transform: rotate(  7deg);
+    margin-top: 13px;
+    animation: buttonsAnimCenter 3.5s  ease-in;
+
+}
+
+
+
+
+/* Animation to buttons on reload */
+@keyframes buttonsAnimCenter {
+    0%{
+        transform: translateY(-60rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+@media (300px <= width <= 375px){
+    
+    /* this is first Profile or we can nav of the where we have hii emoji and about icon */
+
+    .profile{
+        padding: 2rem 1.2rem;
+        opacity: 0.8;
+
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.8rem 9rem;
+        align-items: center;
+        background-color: white; */
+        
+    }
+    /* This span is the hii Emoji present i profile  */
+    .profile>span{
+        font-size: 1.7rem;
+    }
+    .profile>span:hover{
+        transform: rotateZ(20deg);
+        transition: 0.2s ease-in-out;
+    }
+    /*/////////////////////////////// */
+
+    /* this is the about Icon Css In about we have two things one profile icon and  about span which is shown when hovered*/
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1.8rem;
+        height: 1.8rem;
+        color: white;
+        font-size:1.4rem;
+    }
+
+    .about:hover{
+        /* background-color: rgba(255, 255, 255, 0.34); */
+        /* box-shadow: 0px 0px 0px 4px white; */
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius:8px;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        /* transition: 0.2s ease-in; */
+    
+    }
+    .abtText{
+        margin-top: 2.8rem;
+        color: rgb(255, 255, 255);
+        font-family: DM Sans, sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        /* letter-spacing: 1.2px; */
+        /* border-radius: 100px; */
+        border: none;
+        /* text-decoration: underline; */
+        position: absolute;
+        width: 70px;
+        opacity: 0;
+        transition:  0.2s ease-in;
+    }
+
+    .about:hover .abtText{
+        opacity: 0.3;
+        outline: none; 
+        background-color: transparent; 
+        box-shadow: 0px 0px 0px 0px ;
+        -webkit-box-shadow: 0px 0px 0px 0px ;
+        -moz-box-shadow: 0px 0px 0px 0px;
+        opacity: 1;
+        transition: 0.2s ease;
+    }
+    
+
+    /* This is main Text section of intro in this we have intro and buttons */
+
+    .Name > h1{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -9%);
+        color: white;
+        text-align: center;
+        min-width: 86%;
+        color: white;
+        font-family: DM Sans, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 5.5vh;
+        letter-spacing: 2.9px;
+        line-height: 1.2em;
+        margin-bottom: 50px;
+        padding: 0 10rem;
+
+    }
+
+
+    .socialButtons{
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        gap: 30.8px;
+        row-gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* These button class is of all the  button or can say a tags */
+    .buttons{
+        width: 80px;
+        height: 80px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        position: relative;
+        box-shadow: 0px 0px 0px 2px transparent;
+        -webkit-box-shadow: 0px 0px 0px 2px transparent;
+    }
+
+    .icon{    
+        color: white;
+        font-size: 28px;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 60%;
+        background: rgba(0, 0, 0, 0);
+        border-radius: 30px;
+    }
+
+    /* This is the span text shown when button hovered  */
+    .btnText{
+        background-color: transparent;
+        color: white;
+        font-family: DM Sans, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 1.2em;
+        padding: 10px 12px;
+        border-radius: 100px;
+        text-decoration: none;
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        width: 90px;
+        z-index: 0;
+        top: 100%;
+        margin-top: 5px;
+        margin-left: -72%;
+        /* visibility: hidden; */
+        opacity:0.6;
+        transition:  0.2s ease;
+    }
+
+
+
+    .b1{
+        transform: rotate(0deg);
+        margin-top: 0px;
+        animation: buttonsAnimCenter 3.5s  ease-in;
+    }
+
+    .b1:active{
+        background-color: rgba(255, 255, 255, 0.36);
+        border-radius: 28px;
+        transition: 0.2s ease;
+        
+    }
+
+    .b2{
+        transform: rotate(0deg);
+        margin-top: 0px;
+        /* animation: buttonsAnim 2s ease; */
+        animation: buttonsAnimCenter 3s  ease-in;
+
+    }
+    .b3{
+        
+        animation: buttonsAnimCenter 2.5s  ease-in;
+    }
+    .b4{
+        transform: rotate( 0deg);
+        margin-top: 0px;
+        animation: buttonsAnimCenter 3s  ease-in;
+
+    }
+
+    .b5{
+        transform: rotate( 0deg);
+        margin-top: 0px;
+        animation: buttonsAnimCenter 3.5s  ease-in;
+
+    }
+
+}
+
+
+@media (375px <= width <= 426px){ 
+
+    .profile{
+        padding: 1.8rem 1rem;
+    }   
+    /* This span is the hii Emoji present i profile  */
+    .profile>span{
+        font-size: 2.3rem;
+    }
+     
+    /*/////////////////////////////// */
+    
+    
+    /* this is the about Icon Css In about we have two things one profile icon and  about span which is shown when hovered*/
+    .about{
+        font-size:1.9rem;
+    }
+    
+    .about:hover{
+        /* background-color: rgba(255, 255, 255, 0.34); */
+        /* box-shadow: 0px 0px 0px 4px white; */
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius:8px;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        /* transition: 0.2s ease-in; */
+    }
+    .abtText{
+        width: 80px;
+        opacity: 0.3;
+    }
+    
+    .about:hover .abtText{
+        box-shadow: 0px 0px 0px 0px ;
+        -webkit-box-shadow: 0px 0px 0px 0px ;
+        -moz-box-shadow: 0px 0px 0px 0px;
+    }
+
+
+    .Name > h1{        
+        font-size:5.6vh;
+        padding: 0 1rem;
+    }
+
+
+    .socialButtons{
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        gap: 36px;
+        row-gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* These button class is of all the  button or can say a tags */
+    .buttons{
+        width: 80px;
+        height: 80px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        position: relative;
+        box-shadow: 0px 0px 0px 2px transparent;
+        -webkit-box-shadow: 0px 0px 0px 2px transparent;
+    }
+
+    .icon{    
+        color: white;
+        font-size: 28px;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 60%;
+        background: rgba(0, 0, 0, 0);
+        border-radius: 30px;
+    }
+
+    /* This is the span text shown when button hovered  */
+    .btnText{
+        background-color: transparent;
+        color: white;
+        font-family: DM Sans, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 1.2em;
+        padding: 10px 12px;
+        border-radius: 100px;
+        text-decoration: none;
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        width: 90px;
+        z-index: 0;
+        top: 100%;
+        margin-top: 5px;
+        margin-left: -72%;
+        /* visibility: hidden; */
+        opacity:0.6;
+        transition:  0.2s ease;
+    }
+
+
+
+    .b1{
+        transform: rotate(0deg);
+        margin-top: 0px;
+        animation: buttonsAnimCenter 3.5s  ease-in;
+    }
+
+    .b1:active{
+        background-color: rgba(255, 255, 255, 0.36);
+        border-radius: 28px;
+        transition: 0.2s ease;
+        
+    }
+
+    .b2{
+        transform: rotate(0deg);
+        margin-top: 0px;
+        /* animation: buttonsAnim 2s ease; */
+        animation: buttonsAnimCenter 3s  ease-in;
+
+    }
+    .b3{
+        
+        animation: buttonsAnimCenter 2.5s  ease-in;
+    }
+    .b4{
+        transform: rotate( 0deg);
+        margin-top: 0px;
+        animation: buttonsAnimCenter 3s  ease-in;
+
+    }
+
+    .b5{
+        transform: rotate( 0deg);
+        margin-top: 0px;
+        animation: buttonsAnimCenter 3.5s  ease-in;
+
+    }
+
+ 
+
+
+
+}
+
+@media (426px <= width <= 1024px){
+    /* this is first Profile or we can nav of the where we have hii emoji and about icon */
+
+    .profile{
+        padding: 2rem 2rem;
+        opacity: 0.8;
+    }
+    /* This span is the hii Emoji present i profile  */
+    .profile>span{
+        font-size: 2.2rem;
+    }
+    
+    /*/////////////////////////////// */
+    .about{
+        font-size:1.9rem;
+    }
+
+     
+    .abtText{
+        margin-top: 3.5rem;    
+    }
+    .about:hover .abtText{
+        opacity: 0.8;
+        background-color: rgba(255, 255, 255, 0.34); 
+        box-shadow: 0px 0px 0px 4px white;
+        -webkit-box-shadow: 0px 0px 0px 4px white;
+        -moz-box-shadow: 0px 0px 0px 4px white;
+    }
+
+
+    .Name > h1{        
+        font-size:10vh;
+        font-weight: 400;
+        padding: 0 1rem;
+    }
+
+
+    
+}
+
+
+
+
+@media (1840px <= width <= 2560px){
+    /* this is first Profile or we can nav of the where we have hii emoji and about icon */
+
+    .profile{
+        padding: 4rem 6rem;
+        opacity: 0.8;
+    }
+    /* This span is the hii Emoji present i profile  */
+    .profile>span{
+        font-size: 4.5rem;
+    }
+
+    .about{
+        font-size:3.5rem;
+    }
+
+     
+    .abtText{
+         
+        margin-top: 6rem;
+        color: rgb(255, 255, 255);
+        font-family: DM Sans, sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        letter-spacing: 1.2px;
+        border-radius: 100px;
+        border: none;
+        position: absolute;
+        width: 150px;
+        opacity: 0;
+        transition:  0.2s ease-in;
+    }
+    .about:hover .abtText{
+        opacity: 0.8;
+        background-color: rgba(255, 255, 255, 0.34); 
+        box-shadow: 0px 0px 0px 4px white;
+        -webkit-box-shadow: 0px 0px 0px 4px white;
+        -moz-box-shadow: 0px 0px 0px 4px white;
+    }
+
+    .abtArrowIcon{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .Name > h1{        
+        font-size:12.2vh;
+        font-weight: 400;
+        padding: 0 1rem;
+    }
+
+
+
+    /* These are the all the buttons present in main div socialButtons   */
+.socialButtons{
+    display: flex;
+    margin: auto;
+    gap: 25px;
+    margin-top: 23em;
+}
+
+/* These button class is of all the  button or can say a tags */
+.buttons{
+    width: 140px;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    position: relative;
+    box-shadow: 0px 0px 0px 2px transparent;
+    -webkit-box-shadow: 0px 0px 0px 2px transparent;
+   
+}
+
+.icon{    
+    color: white;
+    font-size: 47px;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+}
+
+/* This is the span text shown when button hovered  */
+.btnText{
+    background-color: white;
+    color: #3d4144;
+    font-family: DM Sans, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 1.2em;
+    padding: 10px 12px;
+    border-radius: 100px;
+    text-decoration: none;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    width: 90px;
+    z-index: 0;
+    top: 100%;
+    margin-top: 20px;
+    margin-left: -72%;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition:  0.2s ease;
+}
+
+.buttons:hover{
+    outline: none; 
+    background-color: rgba(255, 255, 255, 0.34);
+    box-shadow: 0px 0px 0px 4px white;
+    -webkit-box-shadow: 0px 0px 0px 4px white;
+    -moz-box-shadow: 0px 0px 0px 4px white;
+    opacity: 1;
+    transition: 0.2s ease;
+}
+
+/* When the button will be the Hovered then only text will be visible */
+.buttons:hover .btnText {
+    opacity: 1;
+    z-index: 100;
+    transition: 0.2s ease;
+    margin-top: 16px;
+}
+
+/* These are all buttons from 1-5 to added other class to make them curve */
+.b1{
+    transform: rotate(-8deg);
+    margin-top: 26px;
+    animation: buttonsAnimCenter 3.5s  ease-in;
+
+}
+
+.b1:active{
+    background-color: rgba(255, 255, 255, 0.36);
+    border-radius: 28px;
+    transition: 0.2s ease;
+    
+}
+
+.b2{
+    transform: rotate(-4deg);
+    margin-top: 6px;
+    /* animation: buttonsAnim 2s ease; */
+    animation: buttonsAnimCenter 3s  ease-in;
+
+}
+.b3{
+    
+    animation: buttonsAnimCenter 2.5s  ease-in;
+}
+.b4{
+    transform: rotate(  4deg);
+    margin-top: 6px;
+    animation: buttonsAnimCenter 3s  ease-in;
+
+}
+
+.b5{
+    transform: rotate(  8deg);
+    margin-top: 26px;
+    animation: buttonsAnimCenter 3.5s  ease-in;
+
+}
+
+    
+
+    
+}
