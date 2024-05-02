@@ -28,9 +28,6 @@ function Home(){
 
                 {/* Here We can add The teh text visibility on hover of button in both ways through css also
                 and through using state also */}
-
- 
-                    
                 <Link to="https://www.linkedin.com/in/piyushdana" target="_blank" className='buttons b1'>
 
 
@@ -61,7 +58,7 @@ function Home(){
                         <FontAwesomeIcon icon={faPenRuler}  />
                     </div>
                 </Link>
-
+ 
                 <Link to="mailto:piyushdana11@gmail.com" className='buttons b4' target="_blank">
                     <span className='btnText'>Connect   <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>   </span>
                     <div className='icon'>
@@ -75,11 +72,7 @@ function Home(){
                         <FontAwesomeIcon icon={faGithub}  />
                     </div>
                 </Link>
-                     
-
-                     
-
-                     
+        
             </div>
        </div>
 

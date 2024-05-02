@@ -16,6 +16,8 @@ function App() {
         {/* Add more routes for other pages if needed */}
       </Routes>
 
+      {/* transform: perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px); */}
+
       
     </Router>
   );
