@@ -28,7 +28,7 @@ function AboutPage() {
           <div className=" grid grid-rows-2 overflow-hidden  border rounded-3xl border-[#ffffff33] row-span-4 h-[58rem] ">
                <div className="grid grid-rows-1 gap-5 px-5 py-8">
                   <h1 className="font-light text-[1.8rem] sm:text-[2.5rem] leading-[1.1em] mt-7">How It's Going so far</h1>
-                  <p className="w-[18rem] mt-32 sm:w-[29rem] leading-[1.5em] font-light tracking-wide -translate-y-12 text-[17px]">I recently graduated with a Bachelor of Science in Information Technology (B.Sc. IT) from Amity University Jaipur,
+                  <p className="w-[20rem] mt-32 sm:w-[29rem] leading-[1.5em] font-light tracking-wide -translate-y-12 text-[17px]">I recently graduated with a Bachelor of Science in Information Technology (B.Sc. IT) from Amity University Jaipur,
                     Rajasthan, India. Throughout my education, I honed my skills in exploring new technologies and iterating on concepts I've gained valuable experience through two web development internships and numerous freelance projects.  
                     , where I help bring a client's vision to life.
                   </p>
