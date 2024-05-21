@@ -1,3 +1,25 @@
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,400;1,500&display=swap'); */
+@font-face {
+  font-family: 'Grandslang b side';
+  src: url('https://uploads-ssl.webflow.com/63bf33f53bdbf7d93dc43b4a/63bf33f53bdbf7a817c43b73_GrandSlang-B-Side.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Grandslang';
+  src: url('https://uploads-ssl.webflow.com/63bf33f53bdbf7d93dc43b4a/63bf33f53bdbf79bd9c43b82_GrandSlang-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Grandslang roman';
+  src: url('https://uploads-ssl.webflow.com/63bf33f53bdbf7d93dc43b4a/63bf33f53bdbf721a7c43b83_GrandSlang-Roman.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

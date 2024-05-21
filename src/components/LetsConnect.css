@@ -1,99 +1,65 @@
-/* Cool share button made by: csozi | Website: english.csozi.hu*/
+.card {
+  display: flex;
+  height: 70px;
+  width: 270px;
+}
+ 
 
-.ConnectBtnMain {
-    position: relative;
-    display: grid;
-    place-items: center;
-    transition: 0.3s;
-    border-radius: 0%;
-    border: none;
+.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link1:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+  background-color: #00ccff;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+  background-color: #0a66c2;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+  background-color: #12a50b;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.2);
   }
-  
-  .ConnectBtnMain:hover {
-    padding: 60px;
+
+  60% {
+    transform: scale(0.8);
   }
-  
-  /* .ConnectBtnMain:hover .button {
-     
-  } */
-  
-  .mainBtn {
-    position: relative;
-    display: grid;
-    place-items: center;
-    /* padding: 10px; */
-    border: none;
-    /* background: #e8e8e8; */
-    border-radius: 50%;
-    transition: 0.2s;
-    z-index: 100;
+
+  80% {
+    transform: scale(1.2);
   }
-  
-  .button {
-    position: absolute;
-    display: grid;
-    place-items: center;
-    padding: 10px;
-    border: none;
-    background: #e8e8e8;
-      
-    transition: 0.3s;
-    border-radius: 50%;
+
+  100% {
+    transform: scale(1);
   }
-  
-  #connectText:hover ~ .ConnectBtnMain{
-    background: red;
-  }
-   
-  
-  .twitter-button:hover {
-    background: #1CA1F1;
-  }
-  
-  .ConnectBtnMain:hover .twitter-button {
-    /* translate: 47px -47px; */
-    translate: 75px -30px;
-     
-  }
-  
-  .reddit-button:hover {
-    background: #FF4500;
-  }
-  
-  .ConnectBtnMain:hover .reddit-button {
-    translate: 5px -90px;
-     
-  }
-  
-  .messenger-button:hover {
-    background: #0093FF;
-  }
-  
-  .ConnectBtnMain:hover .messenger-button {
-    /* translate: -70px -37px; */
-    translate: -75px -30px;
-     
-  }
-  
-  .pinterest-button:hover {
-    background: #F0002A;
-  }
-  
-  .ConnectBtnMain:hover .pinterest-button {
-    translate: -45px 60px;
-     
-  }
-  
-   
-  
-  
-  
-  .whatsapp-button:hover {
-    background: #25D366;
-  }
-  
-  .ConnectBtnMain:hover .whatsapp-button {
-    /* translate: 57px 57px; */
-    translate: 50px 62px;
-     
-  }
+}
