@@ -96,7 +96,7 @@ function AboutPage() {
           </div>
           )}
 
-          {/* 2 */}
+          {/* /* 2 */}
           {about[1] && (
             <div className=" grid grid-rows-2 overflow-hidden  border rounded-3xl border-[#ffffff33] row-span-4 h-[58rem] ">
                 <div className="grid grid-rows-1 gap-5 px-5 py-8">
@@ -180,4 +180,4 @@ function AboutPage() {
 }
 
 export default AboutPage;
-// https://vxxx.com/video-81255/
+ 
