@@ -4,12 +4,22 @@ module.exports = {
   theme: {
     extend: {
 
+      keyframes:{
+        scroll:{
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 15s linear infinite',
+      },
+
       fontFamily:{
         "display": ["Grandslang b side", "cursive"],
       },
 
       boxShadow :{
-        'shadow':"0 2px 25px 2px #fff",
+        'shadow':"0 5px 25px 2px #fff",
       },
 
 

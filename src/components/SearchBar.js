@@ -12,7 +12,7 @@ export default function SearchBar() {
   
       />
       
-      {/* <span className="input-border input-border-alt  "></span> */}
+      
 </div>
   )
 }

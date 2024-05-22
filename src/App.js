@@ -5,11 +5,6 @@ import AboutPage from "./pages/AboutPage.js";
 
 function App() {
   return (
-
-    // <div>
-    //   <Home/>
-    // </div>
-
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,7 +15,6 @@ function App() {
 
       {/* transform: perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px); */}
 
-      
     </Router>
   );
   

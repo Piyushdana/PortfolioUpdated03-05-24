@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
-import {getFirestore} from "@firebase/firestore";
+import { getFirestore, enableIndexedDbPersistence } from "@firebase/firestore";
+
 const firebaseConfig = {
     apiKey: "AIzaSyCQrZaMkMTyMVKwdMomEPCLS9miWQZkHjE",
     authDomain: "portfolio-db-d38ae.firebaseapp.com",
@@ -8,10 +9,19 @@ const firebaseConfig = {
     messagingSenderId: "289633207187",
     appId: "1:289633207187:web:7004aa03c848c9ace09e66",
     measurementId: "G-QLJNSHLF08"
-  };
+};
 
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-  const app = initializeApp(firebaseConfig);
+// Enable offline persistence
+enableIndexedDbPersistence(db)
+    .catch((err) => {
+        if (err.code === 'failed-precondition') {
+            console.error("Multiple tabs open, persistence can only be enabled in one tab at a a time.");
+        } else if (err.code === 'unimplemented') {
+            console.error("The current browser does not support all of the features required to enable persistence.");
+        }
+    });
 
-  export const db = getFirestore(app);
-  console.log(db);
+export { db };
