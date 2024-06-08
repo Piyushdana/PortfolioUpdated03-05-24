@@ -39,10 +39,10 @@ const Projects = () => {
        <GlowingHead name = "Projects"/>
 
         {/* Projects displayed */}
-        <div className=' grid  space-x-4 items-center sm:grid-cols-2 sm:gap-7 md:grid-cols-3 2xl:grid-cols-5  xl:grid-cols-4  text-white'>
+        <div className=' grid space-x-4 items-center sm:grid-cols-2 sm:gap-7 md:grid-cols-3 2xl:grid-cols-5  xl:grid-cols-4  text-white'>
             {/* Mapped projects in projectCard*/}
             {projects.map((project)=>(
-              <ProjectCard key={project.id}   project={project}/>
+              <ProjectCard key={project.id}   project={project}/> 
             ))}
           <h3 className='py-5 md:py-0'> more to come in future...</h3>
         </div>
